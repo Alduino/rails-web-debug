@@ -1,0 +1,38 @@
+{
+  "name": "rails-web-debug",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DevTools extension to show a tree view of Rails templates",
+  "scripts": {
+    "build": "pnpm build:browser-package && vite build",
+    "build:browser-package": "cd browser-package && tsup && cp dist/index.global.js ../src/build-assets/browser-package.js",
+    "watch": "vite build --watch",
+    "dev": "vite",
+    "serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\" --source-dir ./dist/"
+  },
+  "keywords": [],
+  "author": "Zach Barham <me@alduino.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "@samrum/vite-plugin-web-extension": "^3.0.0",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "@types/webextension-polyfill": "^0.9.2",
+    "@vanilla-extract/vite-plugin": "^3.7.0",
+    "@vitejs/plugin-react-swc": "^3.0.1",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "web-ext": "^7.4.0"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.9.2",
+    "@vanilla-extract/css-utils": "^0.1.3",
+    "@vanilla-extract/dynamic": "^2.0.3",
+    "@vanilla-extract/recipes": "^0.3.0",
+    "react": "^18.2.0",
+    "react-bootstrap-icons": "^1.10.2",
+    "react-dom": "^18.2.0",
+    "webextension-polyfill": "^0.10.0"
+  }
+}

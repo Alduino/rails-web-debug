@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "esnext",
+        "lib": [
+            "ESNext",
+            "dom"
+        ],
+        "resolveJsonModule": true,
+        "noImplicitAny": true,
+        "strictBindCallApply": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "jsx": "preserve"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
