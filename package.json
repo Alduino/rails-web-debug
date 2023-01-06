@@ -6,6 +6,7 @@
   "scripts": {
     "build": "pnpm build:browser-package && vite build",
     "build:browser-package": "cd browser-package && tsup && cp dist/index.global.js ../src/build-assets/browser-package.js",
+    "package": "web-ext build --source-dir dist --artifacts-dir dist",
     "watch": "vite build --watch",
     "dev": "vite",
     "serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\" --source-dir ./dist/"

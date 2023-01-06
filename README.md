@@ -13,3 +13,11 @@ The Rails server needs to have `config.action_view.annotate_rendered_view_with_f
 The line is usually already there, commented out at the bottom of the file.
 
 Once this is set, restart the server in dev mode and load it up in your browser. In the dev tools, there should be a "Rails" tab.
+
+## Building
+
+You will need `pnpm` v7 and `node` v18 installed. The build has only been tested on Linux (specifically Fedora 37) but it should work on MacOS and may work on Windows.
+
+In the root of the repository run `pnpm install` and then `pnpm run build`.
+
+The build output is placed in the `dist` directory, this can then be zipped with `pnpm run package` to zip the extension.
