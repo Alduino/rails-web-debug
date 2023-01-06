@@ -20,4 +20,4 @@ You will need `pnpm` v7 and `node` v18 installed. The build has only been tested
 
 In the root of the repository run `pnpm install` and then `pnpm run build`.
 
-The build output is placed in the `dist` directory, this can then be zipped with `pnpm run package` to zip the extension.
+The build output is placed in the `dist` directory, this can then be zipped with `pnpm run package` to zip the extension (the zip will also go in the `dist` directory as `rails_web_debug-X.X.X.zip`).
